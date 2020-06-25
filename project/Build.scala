@@ -31,7 +31,6 @@ object Build extends AutoPlugin {
         "-target:jvm-1.8",
         "-encoding", "UTF-8"
       ),
-      mainClass := Some("io.vertx.core.Launcher"),
       unmanagedSourceDirectories in Compile := Vector(scalaSource.in(Compile).value),
       unmanagedSourceDirectories in Test := Vector(scalaSource.in(Test).value),
       initialCommands in console := """|import io.vertx.lang.scala._
