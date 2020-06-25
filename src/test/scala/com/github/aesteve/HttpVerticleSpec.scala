@@ -13,7 +13,7 @@ class HttpVerticleSpec extends VerticleTesting[HttpVerticle] with Matchers {
     val promise = Promise[String]
 
     vertx.createHttpClient()
-      .getNowFuture(8666, "127.0.0.1", "/hello")
+      .getFuture(8666, "127.0.0.1", "/hello")
       .map(
         r => {
           r.exceptionHandler(promise.failure)
