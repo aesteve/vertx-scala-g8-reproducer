@@ -1,8 +1,7 @@
 package com.github.aesteve
 
-import org.scalatest._
-
 import io.vertx.scala.core._
+import org.scalatest.matchers.should.Matchers
 
 class BusVerticleSpec extends VerticleTesting[BusVerticle] with Matchers {
 

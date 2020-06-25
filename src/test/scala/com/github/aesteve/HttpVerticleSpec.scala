@@ -1,7 +1,7 @@
 package com.github.aesteve
 
-import org.scalatest.Matchers
 import io.vertx.scala.ext.web.client._
+import org.scalatest.matchers.should.Matchers
 
 class HttpVerticleSpec extends VerticleTesting[HttpVerticle] with Matchers {
 
