@@ -21,5 +21,5 @@ packageOptions += ManifestAttributes(
 mainClass in (Compile, packageBin) := Some("io.vertx.core.Launcher")
 
 jibBaseImage := "adoptopenjdk/openjdk11:ubi-minimal-jre"
-jibJvmFlags := List("-noverify", "-Djava.security.egd=file:/dev/./urandom")
-jibArgs := List("run", "scala:com.github.aesteve.HttpVerticle") // taken from vertx-in-action source code
+jibJvmFlags := List("-noverify", "-Djava.security.egd=file:/dev/./urandom") // taken from vertx-in-action source code
+jibArgs := List("run", "scala:com.github.aesteve.HttpVerticle")
